@@ -22,6 +22,6 @@ func main() {
 
 }
 func firstPage(writer http.ResponseWriter, request *http.Request) {
-	io.WriteString(writer, "<h1> Hello,this is my first page 5000!</h1>")
+	io.WriteString(writer, "<h1> Hello,this is deployserver 5000!</h1>")
 	reLaunch()
 }
