@@ -13,6 +13,7 @@ func reLaunch() {
 	if err != nil {
 		log.Fatal(err)
 	}
+	print(err)
 }
 
 func main() {
@@ -21,5 +22,6 @@ func main() {
 
 }
 func firstPage(writer http.ResponseWriter, request *http.Request) {
-	io.WriteString(writer, "<h1> Hello,this is my first page!</h1>")
+	io.WriteString(writer, "<h1> Hello,this is my first page 5000!</h1>")
+	reLaunch()
 }
